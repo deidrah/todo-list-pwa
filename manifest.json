@@ -1,11 +1,10 @@
-
+{
     "dir": "ltr",
     "lang": "en",
     "name": "MyToDo",
     "short_name": "MyToDo",
     "scope": "/",
     "display": "standalone",
-    "start_url": "https://todo-pwa-demo.glitch.me/",
     "background_color": "#e3e9ff",
     "theme_color": "#af7eeb",
     "description": "A ToDo list Web App with local storage",
@@ -38,5 +37,5 @@
         "sizes": "512x512",
         "type": "image/png"
       }
-    ],
+    ]
 }

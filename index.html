@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-        
-    <script src="/script.js" defer></script>
+    <header>
+      <h1>My Todo App</h1>
+  </header>
+  <main>
+      <label class="new" for="new">
+          <input id="new" class="new-input" type="text" placeholder="Add new item">
+          <button id="add" class="new-button" disabled>Add</button>
+      </label>
+      <ul id="tasks"></ul>
+  </main>
+  <template id="taskTemplate">
+    <li>
+      <label class="item">
+        <input class="item-check" type="checkbox">
+        <span class="item-text"></span>
+        <button class="delete">delete</button>
+      </label>
+    </li>
+  </template>
+  <script src="/script.js" defer></script>
   </body>
 </html>

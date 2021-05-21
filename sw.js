@@ -1,11 +1,11 @@
 const cacheName = 'todo-app';
 
 var filesToCache = [
-    'sw.js',
-    'script.js',
-    'style.css',
-    'index.html',
-    "manifest.json"
+    './sw.js',
+    './script.js',
+    './style.css',
+    './index.html',
+    "./manifest.json"
 ];
 
 self.addEventListener('install', function (e) {
@@ -31,7 +31,7 @@ self.addEventListener('fetch', (event) => {
         }
 
         const cache = await caches.open(cacheName);
-        return await cache.match("index.html");
+        return await cache.match("./index.html");
 
     })());
 });

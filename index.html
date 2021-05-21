@@ -3,30 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.com/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Ffavicon.ico?v=1621179743925" />
+    <link rel="manifest" href="/manifest.json" />
+
     <title>ToDo List PWA</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- meta tags for SEO and social sharing -->
+    <meta name="description" content="A ToDo list Web App with local storage" />
+    <meta name="robots" content="index,follow" />
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>My Todo App</h1>
-  </header>
-  <main>
-      <label class="new" for="new">
-          <input id="new" class="new-input" type="text" placeholder="Add new item">
-          <button id="add" class="new-button" disabled>Add</button>
-      </label>
-      <ul id="tasks"></ul>
-  </main>
-  <template id="taskTemplate">
-    <li>
-      <label class="item">
-        <input class="item-check" type="checkbox">
-        <span class="item-text"></span>
-        <button class="delete">delete</button>
-      </label>
-    </li>
-  </template>
-  <script src="script.js" defer></script>
+     <header>
+        <h1>My Todo App</h1>
+    </header>
+    <main>
+        <label class="new" for="new">
+            <input id="new" class="new-input" type="text" placeholder="Add new item">
+            <button id="add" class="new-button" disabled>Add</button>
+        </label>
+
+        <ul id="tasks"></ul>
+    </main>
+    
+    <template id="taskTemplate">
+      <li>
+        <label class="item">
+          <input class="item-check" type="checkbox">
+          <span class="item-text"></span>
+          <button class="delete">delete</button>
+        </label>
+      </li>
+    </template>
+    
   </body>
 </html>
